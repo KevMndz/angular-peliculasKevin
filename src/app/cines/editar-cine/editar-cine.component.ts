@@ -14,7 +14,7 @@ export class EditarCineComponent {
   @Input({transform: numberAttribute})
   id!: number;
 
-  cine:CineDTO = {id: 1, nombre:"Acropolis"}
+  cine:CineDTO = {id: 1, nombre:"Acropolis", latitud:25.67835046273144,longitud:-100.31411062695982}
 
   guardarCambios(cine: CineCreacionDTO){
     console.log("Editando cine", cine)
